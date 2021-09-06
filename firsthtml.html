@@ -5,7 +5,6 @@
     .scp{
         color: red;
         font-family: monospace;
-        text-align: center;
     }
     .resize-250{
         height: 250px;
@@ -14,10 +13,9 @@
     .bw-border{
         border-color: black;
         border-width: 2px;
-        border-style: solid;
+        border-style: solid none;
         text-align: center;
         margin-bottom: 15px;
-        border-radius: 10px;
     }
 
     .fumo-test{
@@ -31,15 +29,22 @@
     .fumo-background{
         background-image: url("https://vignette.wikia.nocookie.net/animated-spinning/images/b/b8/Memorys2snap2.png/revision/latest?cb=20170911212805");
         background-repeat: no-repeat;
-        background-size: 1500px 1200px;
-        background-attachment: fixed;
+        background-size: 1500px 300px;
+        background-attachment: scroll;
+    }
+
+    .points-border{
+        border: hidden;
     }
 
     .lg-background{
         background-color: #F5F5F5;
+        padding: 2em;
     }
     .lb-background{
         background-color: #EEF6FD;
+        padding: 2em;
+        
     }
 
     #top{
@@ -57,7 +62,7 @@
     </head>
     <br>
     <body>
-        <div class= "lg-background">
+        <div class= "lg-background points-border">
             <br>If you meet the following, then you're a chimp!:</br>
             <ul>
                 <li>eats bananas</li>
@@ -65,6 +70,40 @@
                 <li>beats their chest</li>
             </ul>
         </div>
+
+        <!--Are you a chimp?
+        Chimp test solid background overlaid with a translucent chimp image-->
+
+        <div>
+            <form id= "chimp-form" action="#">
+                <ol>
+                    <div class= "scp">Chimp Test</div>
+                    <br>
+                        <p><li>Someone ticks you off. What do you do?</li></p>
+                        <input type= "radio" id= "speak" name= "chimp-radio" value= "Speak">
+                        <label for= "speak">Kindly give them a piece of your mind!</label><br>
+                        <input type= "radio" id= "fight" name= "chimp-radio" value= "Fight">
+                        <label for= "fight">Punch them in the face!</label><br>
+                        <input type= "radio" id= "chimp" name= "chimp-radio" value= "Chimp">
+                        <label for= "chimp">Throw your poop at them!</label>
+                    <br>
+                        <p><li>Which of the following are you most likely to do?</li></p>
+                        <input type= "checkbox" id= "sleep" name= "chimp-checkbox" value= "Sleep">
+                        <label for= "sleep">Take a nap</label><br>
+                        <input type= "checkbox" id= "banana" name= "chimp-checkbox" value= "Banana">
+                        <label for= "banana">Eat a banana</label><br>
+                        <input type= "checkbox" id= "homework" name= "chimp-checkbox" value= "Homework">
+                        <label for= "homework">Do homework</label>
+                    <br>
+                        <p><li><label for= "sentence">What was the longest sentence spoken by a chimp?</label></li></p>
+                        <input type="text" placeholder="type answer for above here" id= "sentence" name= "chimp-sentence" required>
+
+
+
+                </ol>
+            </form>
+        </div>
+
         <div class= "lb-background">
             <p>If you meet the following, then you're a fumo!:</p>
             <ul>
@@ -74,9 +113,9 @@
             </ul>
         </div>
     
-        <!--Are you a fumo or a chimp?-->
-        <div class= "fumo-test fumo-background"><form id= "chimp-fumo-form" action="#">
-            <ol><p>Fumo test</p>
+        <!--Are you a fumo?-->
+        <div class= "fumo-test fumo-background"><form id= "fumo-form" action="#">
+            <ol><p class= "scp">Fumo test</p>
             <p><li>Have you failed a test in the past month?</li>
             <label for= "ftest1"><input type= "radio" id= "ftest1" name= "fumo-test"> yes</label>
             <label for= "ftest1"><input type= "radio" id= "ftest1" name= "fumo-test"> no</label></p>
@@ -87,13 +126,6 @@
             <input type="text" placeholder= "do you like minorities" required>
             <p><button type= "submit">Submit your answers!</button></p></ol>
         </form></div>
-
-        <!-- Chimp test solid background overlaid with a translucent chimp image-->
-        <div>
-            <form>
-
-            </form>
-        </div>
     </body>
 </main>
 </html>
