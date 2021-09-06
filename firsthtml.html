@@ -5,28 +5,51 @@
     .scp{
         color: red;
         font-family: monospace;
+        text-align: center;
     }
     .resize-250{
         height: 250px;
         width: 250px;
-        border-radius: 10px;
     }
     .bw-border{
         border-color: black;
-        border-width: 5px;
+        border-width: 2px;
         border-style: solid;
+        text-align: center;
+        margin-bottom: 15px;
+        border-radius: 10px;
     }
+
+    .fumo-test{
+        border-color: black;
+        border-width: 2px;
+        border-style: solid;
+        text-align: justify; 
+        border-radius: 10px;
+    }
+
+    .fumo-background{
+        background-image: url("https://vignette.wikia.nocookie.net/animated-spinning/images/b/b8/Memorys2snap2.png/revision/latest?cb=20170911212805");
+        background-repeat: no-repeat;
+        background-size: 1500px 1200px;
+        background-attachment: fixed;
+    }
+
     .lg-background{
         background-color: #F5F5F5;
     }
     .lb-background{
         background-color: #EEF6FD;
     }
+
+    #top{
+        background-color: #fadede;
+    }
 </style>
 <h1 class= "scp">Welcome To Abbintianyewunovale ඞඞඞ</h1>
 <main>
     <head>
-        <div>
+        <div id= "top" class= "bw-border">
         <p>We only accept <a href="https://en.wikipedia.org/wiki/Chimpanzee">chimps</a> and <a href= "https://en.wikipedia.org/wiki/Fumo">fumos</a></p>
         <a href="#"><img src= "https://www.ripleys.com/wp-content/uploads/2017/05/ChunkyUncle2.png" class= "resize-250 bw-border" hspace= 10></a>
         <a href="#"><img src= "https://bekuta.neocities.org/Fumo/Images/koishi1.png"  class= "resize-250 bw-border" hspace= 10></a>
@@ -52,9 +75,8 @@
         </div>
     
         <!--Are you a fumo or a chimp?-->
-        <form id= "chimp-fumo-form" action="#">
-            <ol>
-            <p>Fumo test</p>
+        <div class= "fumo-test fumo-background"><form id= "chimp-fumo-form" action="#">
+            <ol><p>Fumo test</p>
             <p><li>Have you failed a test in the past month?</li>
             <label for= "ftest1"><input type= "radio" id= "ftest1" name= "fumo-test"> yes</label>
             <label for= "ftest1"><input type= "radio" id= "ftest1" name= "fumo-test"> no</label></p>
@@ -63,10 +85,15 @@
             <label for= "ftest2"><input type= "checkbox" id= "ftest2" name= "fumo-test"> academically bottom of the class</label>
             <label for= "ftest2"><input type= "checkbox" id= "ftest2" name= "fumo-test"> speaks your mind</label></p>
             <input type="text" placeholder= "do you like minorities" required>
-            <p><button type= "submit">Submit your answers!</button></p>         
-            </ol>
-        </form>
-    
+            <p><button type= "submit">Submit your answers!</button></p></ol>
+        </form></div>
+
+        <!-- Chimp test solid background overlaid with a translucent chimp image-->
+        <div>
+            <form>
+
+            </form>
+        </div>
     </body>
 </main>
 </html>
