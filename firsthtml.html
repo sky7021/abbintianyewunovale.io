@@ -21,9 +21,11 @@
     .fumo-test{
         border-color: black;
         border-width: 2px;
-        border-style: solid;
+        border-style: solid none;
         text-align: justify; 
         border-radius: 10px;
+        padding: 2em 4em;
+        margin: 0em 5em;
     }
 
     .fumo-background{
@@ -98,34 +100,34 @@
                         <p><li><label for= "sentence">What was the longest sentence spoken by a chimp?</label></li></p>
                         <input type="text" placeholder="type answer for above here" id= "sentence" name= "chimp-sentence" required>
 
-
-
+                        <p><button type= "submit">Submit your answers!</button></p>
                 </ol>
             </form>
         </div>
 
-        <div class= "lb-background">
+        <div class= "lb-background points-border">
             <p>If you meet the following, then you're a fumo!:</p>
             <ul>
                 <li>has an iq of 9</li>
                 <li>is funky</li>
                 <li>mind empty</li>
             </ul>
-        </div>
     
-        <!--Are you a fumo?-->
-        <div class= "fumo-test fumo-background"><form id= "fumo-form" action="#">
-            <ol><p class= "scp">Fumo test</p>
-            <p><li>Have you failed a test in the past month?</li>
-            <label for= "ftest1"><input type= "radio" id= "ftest1" name= "fumo-test"> yes</label>
-            <label for= "ftest1"><input type= "radio" id= "ftest1" name= "fumo-test"> no</label></p>
-            <p><li>Check all that applies to you</li>
-            <label for= "ftest2"><input type= "checkbox" id= "ftest2" name= "fumo-test"> likes cold weather</label>
-            <label for= "ftest2"><input type= "checkbox" id= "ftest2" name= "fumo-test"> academically bottom of the class</label>
-            <label for= "ftest2"><input type= "checkbox" id= "ftest2" name= "fumo-test"> speaks your mind</label></p>
-            <input type="text" placeholder= "do you like minorities" required>
-            <p><button type= "submit">Submit your answers!</button></p></ol>
-        </form></div>
+            <!--Are you a fumo?-->
+            <div class= "fumo-test fumo-background"><form id= "fumo-form" action="#">
+                <ol><p class= "scp">Fumo test</p>
+                <p><li>Have you failed a test in the past month?</li>
+                <label for= "ftest1"><input type= "radio" id= "ftest1" name= "fumo-test"> yes</label>
+                <label for= "ftest1"><input type= "radio" id= "ftest1" name= "fumo-test"> no</label></p>
+                <p><li>Check all that applies to you</li>
+                <label for= "ftest2"><input type= "checkbox" id= "ftest2" name= "fumo-test"> likes cold weather</label>
+                <label for= "ftest2"><input type= "checkbox" id= "ftest2" name= "fumo-test"> academically bottom of the class</label>
+                <label for= "ftest2"><input type= "checkbox" id= "ftest2" name= "fumo-test"> speaks your mind</label></p>
+                <input type="text" placeholder= "do you like minorities" required>
+                <p><button type= "submit">Submit your answers!</button></p></ol>
+                </form>
+            </div>
+        </div>
     </body>
 </main>
 </html>
