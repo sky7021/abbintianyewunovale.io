@@ -1,0 +1,55 @@
+
+    .scp{
+        color: red;
+        font-family: monospace;
+    }
+    .resize-250{
+        height: 250px;
+        width: 250px;
+    }
+    .bw-border{
+        border-color: black;
+        border-width: 2px;
+        border-style: solid none;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .test{
+        border-style: solid none;
+        text-align: justify; 
+        padding: 2em 4em;
+        margin: 0em 5em;
+    }
+
+    .fumo-background{
+        background-image: url("https://vignette.wikia.nocookie.net/animated-spinning/images/b/b8/Memorys2snap2.png/revision/latest?cb=20170911212805");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-attachment: scroll;
+    }
+
+    .points-border{
+        border: hidden;
+    }
+
+    .lg-background{
+        background-color: #F5F5F5;
+        padding: 2em;
+    }
+    .lb-background{
+        background-color: #EEF6FD;
+        padding: 2em;
+        
+    }
+
+    #top{
+        background-color: #fadede;
+    }
+
+    a{
+        color:black;
+    }
+    a:hover{
+        color:blue;
+    }
